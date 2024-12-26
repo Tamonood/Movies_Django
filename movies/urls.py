@@ -23,4 +23,7 @@ urlpatterns = [
     path('movies/', views.movies),
     path('', views.home),            # Root URL route
     path('homie/', views.homealone),
+    path('movies/<int:id>', views.detail),
+    path('movies/add', views.add),  # new path to create a movie
+    path('movies/delete/<int:id>', views.delete)
 ]
